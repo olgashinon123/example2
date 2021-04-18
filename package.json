@@ -1,0 +1,16 @@
+{
+  "name": "example2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/app.js",
+  "scripts": {
+    "build": "tsc && node ./dist/app.js"
+  },
+  "keywords": [
+    "typescript",
+    "node",
+    "javascript"
+  ],
+  "author": "Olga",
+  "license": "MIT"
+}
