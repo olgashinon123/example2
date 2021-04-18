@@ -24,6 +24,14 @@ class MagementProduct {
             return true;
         });
     }
+    render() {
+        var html: string = "<ul>";
+        this.list.forEach((item: Products) => {
+            html += `<li>${item.name} ${item.description} <button id="${item.id}">Eliminar</button></li>`
+        });
+        html += "</ul>";
+        return html;
+    }
     searchProduct(key: string) {
         var keyExpression: RegExp = new RegExp(key, "i");
         this.searchList = this.list.filter((item: Products) => {
